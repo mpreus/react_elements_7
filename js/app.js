@@ -7,10 +7,10 @@ class DesktopMenu extends React.Component {
                 <div className="desktop-menu">
                     <nav>
                         <ul>
-                            <li><a href="#">O nas</a></li>
-                            <li><a href="#">Zespół</a></li>
-                            <li><a href="#">Produkty</a></li>
-                            <li><a href="#">Kontakt</a></li>
+                            <li><a href="https://mpreus.github.io/react_elements_5/">Życzenia</a></li>
+                            <li><a href="https://mpreus.github.io/react_elements_4/">Waluty</a></li>
+                            <li><a href="https://mpreus.github.io/react_basic_elements_15/">Godzina</a></li>
+                            <li><a href="http://www.linkedin.com/in/maciejpreus">Kontakt</a></li>
                         </ul>
                     </nav> 
                 </div>
@@ -46,10 +46,10 @@ class MobileMenu extends React.Component {
                     <a href="#" onClick={this.openMenu} className="open-menu"></a>
                     <nav className={this.state.isOpen ? "" : "hide"}>
                         <ul>
-                            <li><a href="#">O nas</a></li>
-                            <li><a href="#">Zespół</a></li>
-                            <li><a href="#">Produkty</a></li>
-                            <li><a href="#">Kontakt</a></li>
+                            <li><a href="https://mpreus.github.io/react_elements_5/">Życzenia</a></li>
+                            <li><a href="https://mpreus.github.io/react_elements_4/">Waluty</a></li>
+                            <li><a href="https://mpreus.github.io/react_basic_elements_15/">Godzina</a></li>
+                            <li><a href="http://www.linkedin.com/in/maciejpreus">Kontakt</a></li>
                         </ul>
                         <a href="#" onClick={this.closeMenu} className="close-menu">Zamknij menu</a>
                     </nav>
