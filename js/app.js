@@ -1,42 +1,25 @@
-/* komponent nawigacji desktopowej - w poziomie */
+/* komponent nawigacji desktopowej - w poziomie, otwarta (renderowana) na stałe */
 class DesktopMenu extends React.Component {
-    state = {
-        isOpen: true
-    }
-
-    openMenu = (e) => {
-        e.preventDefault()
-        this.setState({
-            isOpen: false
-        })
-    }
-
-    closeMenu = (e) => {
-        e.preventDefault()
-        this.setState({
-            isOpen: true
-        })
-    }
-
+    
     render() {
         return (
             <section className="desktop">
                 <div className="desktop-menu">
-                    <a href="#" onClick={this.openMenu} className="open-menu"></a>
-                    <nav className={this.state.isOpen ? "" : "hide"}>
+                    <nav>
                         <ul>
                             <li><a href="#">O nas</a></li>
                             <li><a href="#">Zespół</a></li>
                             <li><a href="#">Produkty</a></li>
                             <li><a href="#">Kontakt</a></li>
                         </ul>
-                    </nav>
+                    </nav> 
                 </div>
-            </section>
-        )
+            </section> 
+        )                /* pozioma nawigacja bez przycisków otwierającego i zamykającego */
     }
 }
-/* komponent nawigacji mobilnej - w pionie */
+
+/* komponent nawigacji mobilnej - w pionie - domyślnie zamknięta; otwierana kliknięciem w hamburger */
 class MobileMenu extends React.Component {
     state = {
         isOpen: false
@@ -72,7 +55,7 @@ class MobileMenu extends React.Component {
                     </nav>
                 </div>
             </section>
-        )
+        )            /* pionowa (mobilna) nawigacja z przyciskami: otwierającym menu i zamykającym */
     }
 }
 /* warunkowe renderowanie nawigacji w zależności od szerokości ekranu */
